@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,62 +12,115 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/imgs/Nuevo logo CIDI/logo cidi2021.png" alt="" 
-                    height="60" class="d-inline-block align-text-top">
-                </a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/imgs/Nuevo logo CIDI/logo cidi2021.png" alt=""
+              height="60" class="d-inline-block align-text-top">
+          </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse navbarSupportedContent" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/componentes.html">COMPONENTES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/plantillas.html">PLANTILLAS</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbarSupportedContent" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/componentes.html">COMPONENTES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="html/plantillas.html">PLANTILLAS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-
     <section class="hero">
-        <div class="hero__huella">
-            <img src="assets/imgs/Nuevo logo CIDI/huella-blanca.png" alt="">
-        </div>
+      <div class="hero__huella">
+        <img src="assets/imgs/Nuevo logo CIDI/huella-blanca.png" alt="">
+      </div>
 
-        <div class="hero__presentacion">
-            <div class="presentacion__img">
-                <img src="assets/imgs/Nuevo logo CIDI/cidi-blanco.png" alt="">
-            </div>
-            <hr>
-            <div class="hero__titulo">
-                <h1>Galería de Estilos</h1>
-            </div>
+      <div class="hero__presentacion">
+        <div class="presentacion__img">
+          <img src="assets/imgs/Nuevo logo CIDI/cidi-blanco.png" alt="">
         </div>
+        <hr>
+        <div class="hero__titulo">
+          <h1>Galería de Estilos</h1>
+        </div>
+      </div>
     </section>
-    
-    
 
+    <div class="row mt-5">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h2>Instalación</h2>
+        <div id="plant_header" class="plantilla_header mt-3">
+          <h3>Manual</h3>
+          <p>Agrega al archivo html las Siguientes dependencias:</p>
+          <p>CSS - Bootstrap (v-3.4.1), CIDI, Iconos</p>
+          <div class="code-block"><pre><code id="copy-css"><span class="punctuation">&lt;<span class="tag">link</span> <span class="keyword">src</span>="<span class="string">https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css</span>" <span class="keyword">rel</span>="<span class="string">stylesheet</span>"&gt;</span>
+<span class="punctuation">&lt;<span class="tag">link</span> <span class="keyword">src</span>="<span class="string">https://lalala.com/CIDI.css</span>" <span class="keyword">rel</span>="<span class="string">stylesheet</span>"&gt;</span></code></pre>
+            <button type="button" class="btn btn-outline-secondary btn-sm code-button" onclick="copyText('copy-css')">copiar</button>
+          </div>
 
+          <p>JavaScript - Bootstrap (v-3.4.1)</p>
+          <div class="code-block"><pre><code id="copy-javascript"><span class="punctuation">&lt;<span class="tag">script</span> <span class="keyword">src</span>="<span class="string">https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js</span>"&gt;</span><span class="punctuation">&lt;/<span class="tag">script</span>&gt;</span></code></pre>
+            <button type="button" class="btn btn-outline-secondary btn-sm code-button" onclick="copyText('copy-javascript')">copiar</button>
+          </div>
+        </div>
 
+        <div id="plant_header" class="plantilla_header mt-3">
+          <h3>Comienza a usar CIDI</h3>
+          <div class="row justify-content-around">
+            <div class="card_tramite">
+              <a href="html/identidad.html">
+                <img src="assets/imgs/Grafica CIDI/CIDI -MENU Y ENCABEZADO/05-otros.png" alt="">
+                <div class="card_tramite_info">
+                    <h3>Identidad</h3>
+                    <p>Íconos oficiales, colores, tipografía y uso de marca de Presidencia.</p>
+                </div>
+                <div class="footer_card"></div>
+              </a>
+            </div>
+            <div class="card_tramite">
+              <a href="html/componentes.html">
+                <img src="assets/imgs/Grafica CIDI/CIDI -MENU Y ENCABEZADO/03-expediente.png" alt="">
+                <div class="card_tramite_info">
+                    <h3>Componentes</h3>
+                    <p>Botones, paneles, alertas y otros elementos para construír páginas.</p>
+                </div>
+                <div class="footer_card"></div>
+              </a>
+            </div>
+          </div>
+        </div>
 
+      </div>
+      <div class="col-2 m-5"></div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
-</body>
+    <script>
+      function copyText(txt) {
+        //Selecciona el area de texto por su ID
+        var Text = document.getElementById(txt);
+        window.getSelection().selectAllChildren(Text);
+        //Copiar el texto seleccionado a clipboard
+        document.execCommand("Copy");
+      }
+    </script>
+  </body>
+  
+
+  
 </html>
