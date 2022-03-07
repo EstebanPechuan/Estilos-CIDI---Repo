@@ -109,7 +109,14 @@ header .navbar .nav-item.active {
     color: #fff !important;    
 }
 
+a {
+    color: var(--pry-color) !important;
+    text-decoration: solid !important;
+}
 
+a:hover {
+    color: var(--sry-color) !important;
+}
 
 /* --- Título de la página --- */
 
