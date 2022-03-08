@@ -109,7 +109,6 @@
 
             <section class="hero_componentes col-9">
 
-
                 <!-- ICONOS -->
                 <h2>Iconos</h2>
                 <div id="iconos-uso" class="componentes__tramites">
@@ -478,7 +477,6 @@
                     </div>
                 </div>
 
-
                 <hr>
                 <!-- TIPOGRAFIA -->
                 <h2>Tipografía</h2>
@@ -528,17 +526,24 @@
                     </div>
                 </div>
 
-
                 <hr>
                 <!-- MANUAL DE USOS -->
                 <h2>Manual de Usos</h2>
                 <div id="descargas" class="componentes__tramites">
                     <h3>Descargas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maiores ipsum eum ullam? Magni necessitatibus maxime dolor ducimus tempora fuga quisquam asperiores alias quaerat suscipit non maiores corrupti culpa voluptatum, minima quae, voluptas vitae optio iure enim rem dolore voluptatem.</p>
-                    <div class="col-12">
+                    <p>Manual de marca institucional de Presidencia de la Nación Argentina con lineamientos básicos de aplicación de logotipos, paletas de colores y piezas de comunicación.</p>
+                    <div class="mx-3 d-grid gap-2">
                         <a href="../assets/pdfs/Manual Buen uso Gobierno de San Juan enero21.pdf" target="_blank">
-                            <button type="button" class="btn btn-outline-secondary">Descargar Manual de Marca
-                            </button>
+                            Manual de Marca
+                        </a>
+                        <a href="https://argob.github.io/poncho/identidad/presidencia/ministerios_solos.pdf" target="_blank">
+                            Logos de ministerios
+                        </a>
+                        <a href="https://argob.github.io/poncho/identidad/presidencia/logo_presidencia.pdf" target="_blank">
+                            Logo de Presidencia de la Nación
+                        </a>
+                        <a href="https://argob.github.io/poncho/identidad/presidencia/logo_argentina_gob_ar.pdf" target="_blank">
+                            Logo de Argentina.gob.ar
                         </a>
                     </div>
                 </div>
@@ -562,7 +567,6 @@
     <script>
         // Click Event Sidebar
         const lista = document.querySelectorAll('.sidebar__secciones li')
-
         for (const li of lista) {            
             li.addEventListener('click', () => {                
                 for (const i of lista) {
@@ -573,7 +577,6 @@
         }
     </script>
 
-
     <script>
         const arrTablaTr = document.querySelectorAll('.tr-check')
         const checkboxGlobal = document.querySelector('.checkboxGlobal')
@@ -581,37 +584,26 @@
         for (const tr of arrTablaTr) {
             tr.addEventListener('click', () => {
                 var aux = tr.getAttribute('class')
-
                 if (aux === 'tr-check tr-checked') {
                     tr.children[0].children[0].checked = false
                     
                     for (const eachCheck of arrTablaTr) {
                         if (eachCheck.children[0].children[0].checked) {
-                            
                             checkboxGlobal.checked = true
-
                             break
-
                         }
-                        
                         checkboxGlobal.checked = false  
                     }
 
-
                 } else {
                     tr.children[0].children[0].checked = true
-
                     checkboxGlobal.checked = true
                 }
-
                 tr.classList.toggle('tr-checked')                
             })
         }
 
-
-
         checkboxGlobal.addEventListener('click', () => {
-
             if (checkboxGlobal.checked) {
                 for (const tr of arrTablaTr) {
                     tr.children[0].children[0].checked = true
@@ -624,12 +616,7 @@
                 }
             }
         })
-
-        
     </script>
-
-    
-
     <!-- Bootstrap JS -->
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
