@@ -123,8 +123,7 @@
                 <div id="tramites" class="componentes__tramites">
                     <h3>Botones de Trámites</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maiores ipsum eum ullam? Magni necessitatibus maxime dolor ducimus tempora fuga quisquam asperiores alias quaerat suscipit non maiores corrupti culpa voluptatum, minima quae, voluptas vitae optio iure enim rem dolore voluptatem.</p>
-
+                    <!--<p>Lorem ipsum</p>-->
                     <div class="col-12 my-5">
 
                         <div class="row justify-content-around">
@@ -185,8 +184,7 @@
                 <div id="extras" class="componentes__tramites">
                     <h3>Botones Extras</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maiores ipsum eum ullam? Magni necessitatibus maxime dolor ducimus tempora fuga quisquam asperiores alias quaerat suscipit non maiores corrupti culpa voluptatum, minima quae, voluptas vitae optio iure enim rem dolore voluptatem.</p>                    
-
+                    <!--<p>Lorem ipsum</p>-->
                     <div class="col-12 my-5">
 
                         <div class="row justify-content-around">
@@ -297,9 +295,7 @@
                 <div id="menu_iconos" class="componentes__tramites">
                     <h3>Iconos Menu</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maiores ipsum eum ullam? Magni necessitatibus maxime dolor ducimus tempora fuga quisquam asperiores alias quaerat suscipit non maiores corrupti culpa voluptatum, minima quae, voluptas vitae optio iure enim rem dolore voluptatem.</p>
-                    
-
+                    <!--<p>Lorem ipsum</p>-->
                     <div class="col-12">
 
                         <div class="row justify-content-center flex-column align-items-center">
@@ -362,9 +358,7 @@
 
                 <h3 id="menu_secciones">Secciones Menu</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maiores ipsum eum ullam? Magni necessitatibus maxime dolor ducimus tempora fuga quisquam asperiores alias quaerat suscipit non maiores corrupti culpa voluptatum, minima quae, voluptas vitae optio iure enim rem dolore voluptatem.</p>
-                    
-
+                    <!--<p>Lorem ipsum</p>-->
                     <div class="col-12">
 
                         <div class="row justify-content-center flex-column align-items-center">
@@ -386,7 +380,7 @@
                                 <a href="#c">
                                     <div class="menu_seccion">
                                         <img class="menu_seccion_rojo" src="../assets/imgs/Grafica CIDI/CIDI 1.2/iconos-SVG-rojos/22-billetera.svg" alt="">
-                                        <img class="menu_seccion_blanco" src="../assets/imgs/Grafica CIDI/CIDI 1.2/iconos-SVG-blancos/22- billetera.svg" alt="">
+                                        <img class="menu_seccion_blanco" src="../assets/imgs/Grafica CIDI/CIDI 1.2/iconos-SVG-blancos/22-billetera.svg" alt="">
                                     </div>
                                     
                                     <div class="card_cuenta_info">
@@ -435,8 +429,7 @@
                 <div id="tramites" class="componentes__tramites">
                     <h3>Notificaciones</h3>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis maiores ipsum eum ullam? Magni necessitatibus maxime dolor ducimus tempora fuga quisquam asperiores alias quaerat suscipit non maiores corrupti culpa voluptatum, minima quae, voluptas vitae optio iure enim rem dolore voluptatem.</p>
-
+                    <!--<p>Lorem ipsum</p>-->
                     <div class="col-12 my-5">
 
                         <div class="col-12 iconosTable">
@@ -464,8 +457,6 @@
                                     <th>Estado</th>
                                 </tr>
                             </thead>
-
-
 
                             <tbody>
                                 <tr class="tr-check">
@@ -564,9 +555,7 @@
     </script>
 
     <script>
-
         // Click Event Sidebar
-
         const lista = document.querySelectorAll('.sidebar__secciones li')
 
         for (const li of lista) {            
@@ -577,16 +566,12 @@
                 li.classList.add('active')
             })
         }
-
-
         // const secciones = document.querySelector('body')
-
         // for (const section of secciones) {            
             // section.scrollTop = 130;
         // }
        
     </script>
-
 
     <script>
         const arrTablaTr = document.querySelectorAll('.tr-check')
@@ -601,28 +586,19 @@
                     
                     for (const eachCheck of arrTablaTr) {
                         if (eachCheck.children[0].children[0].checked) {
-                            
                             checkboxGlobal.checked = true
-
                             break
-
                         }
-                        
                         checkboxGlobal.checked = false  
                     }
 
-
                 } else {
                     tr.children[0].children[0].checked = true
-
                     checkboxGlobal.checked = true
                 }
-
-                tr.classList.toggle('tr-checked')                
+                tr.classList.toggle('tr-checked')
             })
         }
-
-
 
         checkboxGlobal.addEventListener('click', () => {
 
@@ -638,15 +614,12 @@
                 }
             }
         })
-
-        
     </script>
-
-    
 
     <!-- Bootstrap JS -->
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/main.js"></script>
     
 </body>
 </html>
