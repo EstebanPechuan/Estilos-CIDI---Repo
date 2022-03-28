@@ -198,6 +198,11 @@
     transform-origin: top left;
 }
 
+.plantilla_header img,
+.plantilla_footer img {
+    width: 100%;
+}
+
 .plantilla_footer .footer_iframe {
     width: 100% !important;
     height: 300px !important;

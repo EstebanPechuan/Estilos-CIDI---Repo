@@ -28,6 +28,7 @@
     height: fit-content;
     position: sticky !important;
     top: 100px !important;
+    display: block;
 }
 
 .sidebar hr {
@@ -97,6 +98,7 @@
 
 .card_tramite {
     max-width: 352px !important;
+    min-width: 300px;
     height: 111px;
     background: rgb(255, 255, 255);
     position: relative;
@@ -104,6 +106,7 @@
     box-shadow: 3px 4px 4px #0004;
     cursor: pointer;
     transition: 0.4s;
+    flex-grow: 1;
 }
 
 .card_tramite a {
@@ -168,6 +171,7 @@
 
 .boton_extras {
     max-width: 260px;
+    min-width: 300px;
     height: 60px;
     background: #fff;
     color: var(--pry-color);
@@ -230,6 +234,7 @@
 
 .boton_extras_cuenta {
     max-width: 260px;
+    min-width: 300px;
     height: 60px;
     padding: 0 !important;
     background: #fff;

@@ -4,6 +4,7 @@
 @import "componentes-css/tablas.css";
 @import "componentes-css/styles-code-languages.css";
 @import "componentes-css/fonts.css";
+@import "media.css";
 
 *,
 *::after,
@@ -79,6 +80,8 @@ header .navbarSupportedContent {
 header .navbarSupportedContent ul {
     position: absolute;
     right: 0;
+    background: rgba(var(--bs-light-rgb),var(--bs-bg-opacity)) !important;
+    min-width: 300px;
 }
 
 header nav .nav-item {
