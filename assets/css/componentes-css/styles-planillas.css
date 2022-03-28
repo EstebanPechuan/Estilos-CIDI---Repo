@@ -198,8 +198,8 @@
     transform-origin: top left;
 }
 
-.header_iframe .plantilla_header img,
-.footer_iframe .plantilla_footer img {
+.header_iframe a img,
+.footer_iframe a img {
     width: 100%;
 }
 
